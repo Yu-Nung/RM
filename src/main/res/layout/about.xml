@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:background="#FFFFCE">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tbDialog"
+                android:background="#FFFF93" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text=
+                    "請在地圖上選擇所要到達目的地，並在地圖上點擊一下，便可產生marker，若要刪除marker再次點擊marker，即可刪除；若想拖曳marker，長按marker，即可拖曳，只可選定一個目的地。當確定目的地後，便可按下計時鍵開始計時，到達目的地距離附近10公尺，即到達目的地，計時暫停。中途要暫停計時，按下暫停鍵，重新計時，按下歸零鍵。"
+                android:id="@+id/txtInfo"
+                android:background="#FFFFCE" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
